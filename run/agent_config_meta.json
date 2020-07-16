@@ -1,0 +1,315 @@
+{
+  "keys": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+  "middleware": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+  "mysql": {
+    "client": {
+      "host": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+      "port": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+      "user": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+      "password": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+      "database": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js"
+    },
+    "app": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+    "agent": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+    "default": {
+      "database": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-mysql\\config\\config.default.js"
+    }
+  },
+  "security": {
+    "csrf": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+      "type": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+    "protocolWhiteList": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+    "credentials": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js",
+    "allowMethods": "D:\\前端\\项目练习\\react_my_blog\\service\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "env": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "name": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "version": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "description": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "private": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "egg": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-mysql": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-scripts": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "autod-egg": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-ci": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "stop": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "dev": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "debug": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "test": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "test-local": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "cov": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "lint": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "ci": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "autod": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "url": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "license": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "baseDir": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "strict": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "depth": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "env": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "level": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "logging": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "port": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "D:\\前端\\项目练习\\react_my_blog\\service\\node_modules\\egg\\config\\config.default.js"
+}

@@ -1,0 +1,2104 @@
+2020-05-24 16:34:46,787 ERROR 10480 [-/127.0.0.1/-/9ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.v' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as idarticle.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.view_count as view_counttype.typeNmae as typeNmaeFROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.v' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as idarticle.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.view_count as view_counttype.typeNmae as typeNmaeFROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 10480
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 16:35:13,279 ERROR 14144 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.v' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as idarticle.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.view_count as view_counttype.typeNmae as typeNmaeFROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.v' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as idarticle.title as titlearticle.introduce as introducearticle.addTime as addTimearticle.view_count as view_counttype.typeNmae as typeNmaeFROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 14144
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 16:36:10,359 ERROR 15116 [-/127.0.0.1/-/9ms GET /default/getArticleList] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'type.typeNmae' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'type.typeNmae' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 15116
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 16:36:13,265 ERROR 15116 [-/127.0.0.1/-/2ms GET /default/getArticleList] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'type.typeNmae' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'type.typeNmae' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 15116
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 16:36:14,432 ERROR 15116 [-/127.0.0.1/-/1ms GET /default/getArticleList] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'type.typeNmae' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'type.typeNmae' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 15116
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 16:36:53,623 ERROR 6624 [-/127.0.0.1/-/9ms GET /default/getArticleList] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'type.typeNmae' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'type.typeNmae' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 6624
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 16:37:02,336 ERROR 6624 [-/127.0.0.1/-/3ms GET /default/getArticleList] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'type.typeNmae' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'type.typeNmae' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 6624
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 16:37:03,069 ERROR 6624 [-/127.0.0.1/-/1ms GET /default/getArticleList] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'type.typeNmae' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'type.typeNmae' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeNmae as typeNmae FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 6624
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 17:46:58,202 ERROR 14368 [-/127.0.0.1/-/7ms GET /default/getArticleById] nodejs.TypeError: Cannot read property 'id' of undefined
+    at HomeController.getArticleById (D:\前端\项目练习\react_my_blog\service\app\controller\default\home.js:23:30)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 14368
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 17:47:05,652 ERROR 14368 [-/127.0.0.1/-/1ms GET /default/getArticleById] nodejs.TypeError: Cannot read property 'id' of undefined
+    at HomeController.getArticleById (D:\前端\项目练习\react_my_blog\service\app\controller\default\home.js:23:30)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 14368
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 17:50:01,464 ERROR 14368 [-/127.0.0.1/-/0ms GET /default/getArticleById] nodejs.TypeError: Cannot read property 'id' of undefined
+    at HomeController.getArticleById (D:\前端\项目练习\react_my_blog\service\app\controller\default\home.js:23:30)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 14368
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 17:50:51,305 ERROR 3088 [-/127.0.0.1/-/2ms GET /default/getArticleById] nodejs.TypeError: Cannot read property 'id' of undefined
+    at HomeController.getArticleById (D:\前端\项目练习\react_my_blog\service\app\controller\default\home.js:23:30)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 3088
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:07:54,679 ERROR 14680 [-/127.0.0.1/-/1ms GET /default/getArticleById/1] nodejs.TypeError: Cannot read property 'id' of undefined
+    at HomeController.getArticleById (D:\前端\项目练习\react_my_blog\service\app\controller\default\home.js:23:30)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\前端\项目练习\react_my_blog\service\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 14680
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:08:55,930 ERROR 13436 [-/127.0.0.1/-/6ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId ,FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId ,FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 13436
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:09:29,164 ERROR 2732 [-/127.0.0.1/-/3ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 2732
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:11:00,961 ERROR 14992 [-/127.0.0.1/-/4ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId ,FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId ,FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 14992
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:12:43,873 ERROR 14428 [-/127.0.0.1/-/9ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 14428
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:17:02,774 ERROR 14428 [-/127.0.0.1/-/5ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 14428
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:18:21,541 ERROR 14116 [-/127.0.0.1/-/10ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 14116
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:19:24,820 ERROR 14116 [-/127.0.0.1/-/2ms GET /default/getArticleById/2] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=2' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=2' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=2"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 14116
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:21:02,299 ERROR 12616 [-/127.0.0.1/-/4ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+name: "ER_PARSE_ERRORError"
+pid: 12616
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-24 18:23:36,674 ERROR 14928 [-/127.0.0.1/-/9ms GET /default/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.id=1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.article_content as article_content ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.IdWHERE article.id=1"
+name: "ER_PARSE_ERRORError"
+pid: 14928
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-26 19:40:06,679 ERROR 6564 [-/127.0.0.1/-/5ms GET /default/getListById/undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id WHERE type_id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id WHERE type_id=undefined"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 6564
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:22,938 ERROR 12844 [-/127.0.0.1/-/112ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:24,383 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:24,974 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:25,727 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:26,833 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:27,050 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:27,402 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:27,421 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:19:54,050 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:20:36,497 ERROR 12844 [-/127.0.0.1/-/4ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:20:36,707 ERROR 12844 [-/127.0.0.1/-/4ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:20:36,878 ERROR 12844 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, '测试1111', '测试1111', '测试1111', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12844
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:21:15,605 ERROR 2252 [-/127.0.0.1/-/16ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, ' Request failed with status code 500', ' Request failed with status code 500', ' Request failed with status code 500', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, ' Request failed with status code 500', ' Request failed with status code 500', ' Request failed with status code 500', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 2252
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:21:20,888 ERROR 2252 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, ' Request failed with status code 500', ' Request failed with status code 500', ' Request failed with status code 500', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, ' Request failed with status code 500', ' Request failed with status code 500', ' Request failed with status code 500', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 2252
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:22:14,653 ERROR 3140 [-/127.0.0.1/-/38ms POST /admin/addArticle] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'intriduce' in 'field list'
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, ' Request failed with status code 500', ' Request failed with status code 500', ' Request failed with status code 500', 1590681600, 0)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'intriduce' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `intriduce`, `addTime`, `view_count`) VALUES(1, ' Request failed with status code 500', ' Request failed with status code 500', ' Request failed with status code 500', 1590681600, 0)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 3140
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:25:56,111 ERROR 9052 [-/127.0.0.1/-/19ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1007)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1007)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 9052
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:25:57,689 ERROR 9052 [-/127.0.0.1/-/2ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1036)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1036)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 9052
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:26:09,740 ERROR 9052 [-/127.0.0.1/-/4ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1090)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1090)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 9052
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:27:10,784 ERROR 4520 [-/127.0.0.1/-/25ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1059)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1059)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:27:13,027 ERROR 4520 [-/127.0.0.1/-/2ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1005)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1005)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:27:16,194 ERROR 4520 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1074)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1074)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:27:18,906 ERROR 4520 [-/127.0.0.1/-/2ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(3, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1088)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(3, '测试111111111111', '测试111111111111', '测试111111111111', 1590681600000, 1088)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:28:52,942 ERROR 4520 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, 'addArticle: ipUrl + \'addArticle\',', 'addArticle: ipUrl + \'addArticle\',', 'addArticle: ipUrl + \'addArticle\',', 1590681600000, 1017)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, 'addArticle: ipUrl + \\'addArticle\\',', 'addArticle: ipUrl + \\'addArticle\\',', 'addArticle: ipUrl + \\'addArticle\\',', 1590681600000, 1017)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:28:55,707 ERROR 4520 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, 'addArticle: ipUrl + \'addArticle\',', 'addArticle: ipUrl + \'addArticle\',', 'addArticle: ipUrl + \'addArticle\',', 1590681600000, 1060)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(1, 'addArticle: ipUrl + \\'addArticle\\',', 'addArticle: ipUrl + \\'addArticle\\',', 'addArticle: ipUrl + \\'addArticle\\',', 1590681600000, 1060)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:30:02,942 ERROR 10600 [-/127.0.0.1/-/21ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\n', '    // tmpArticle.\n', 1590681600000, 1043)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\\n', '    // tmpArticle.\\n', 1590681600000, 1043)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 10600
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:30:04,386 ERROR 10600 [-/127.0.0.1/-/3ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\n', '    // tmpArticle.\n', 1590681600000, 1072)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\\n', '    // tmpArticle.\\n', 1590681600000, 1072)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 10600
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:30:04,395 ERROR 10600 [-/127.0.0.1/-/4ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\n', '    // tmpArticle.\n', 1590681600000, 1008)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\\n', '    // tmpArticle.\\n', 1590681600000, 1008)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 10600
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 12:30:04,425 ERROR 10600 [-/127.0.0.1/-/4ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUEError: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '1590681600000' for column 'addTime' at row 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\n', '    // tmpArticle.\n', 1590681600000, 1025)
+code: "ER_TRUNCATED_WRONG_VALUE"
+errno: 1292
+sqlMessage: "Incorrect datetime value: '1590681600000' for column 'addTime' at row 1"
+sqlState: "22007"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES(2, '    // tmpArticle.', '    // tmpArticle.\\n', '    // tmpArticle.\\n', 1590681600000, 1025)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUEError"
+pid: 10600
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:02:09,947 ERROR 6744 [-/127.0.0.1/-/8ms GET /admin/getArticleById/3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =3"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 6744
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:02:53,565 ERROR 6744 [-/127.0.0.1/-/2ms GET /admin/getArticleById/3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =3"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 6744
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:03:00,452 ERROR 6744 [-/127.0.0.1/-/3ms GET /admin/getArticleById/3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =3"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 6744
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:03:11,838 ERROR 6744 [-/127.0.0.1/-/4ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 6744
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:03:27,023 ERROR 6744 [-/127.0.0.1/-/2ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 6744
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:04:26,779 ERROR 8756 [-/127.0.0.1/-/9ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 8756
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:06:52,250 ERROR 8756 [-/127.0.0.1/-/5ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 8756
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:07:51,055 ERROR 8756 [-/127.0.0.1/-/3ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 8756
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:07:54,842 ERROR 8756 [-/127.0.0.1/-/4ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 8756
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:08:05,163 ERROR 8756 [-/127.0.0.1/-/3ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 8756
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:08:54,205 ERROR 12760 [-/127.0.0.1/-/6ms GET /admin/getArticleById/2] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =2"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 12760
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:09:01,398 ERROR 12760 [-/127.0.0.1/-/3ms GET /admin/getArticleById/2] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =2"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 12760
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:09:39,399 ERROR 4520 [-/127.0.0.1/-/8ms GET /admin/getArticleById/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
+2020-05-29 21:09:47,854 ERROR 4520 [-/127.0.0.1/-/4ms GET /admin/getArticleById/2] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1
+    at Query.Sequence._packetToError (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Pool.query (D:\前端\项目练习\react_my_blog\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\前端\项目练习\react_my_blog\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\前端\项目练习\react_my_blog\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:65:19)
+    at D:\前端\项目练习\react_my_blog\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title ,article.introduce as introduce ,article.addTime as addTime ,article.view_count as view_count ,type.typeName as typeName type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id =2"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4520
+hostname: WIN-SRJLK3CHOQV
+
